@@ -5,7 +5,27 @@
     <meta name="viewport" content="width=device-width">
     <title>Apply JavaScript example</title>
   </head>
+  <script>
+    
+    document.addEventListener('DOMContentLoaded ', () => {
+      function createParagraph() {
+        const para =arguments
+      document.createElement('p');
+        para.textContent = 'you clicked the button!';
+        document.body.appendChild(para);
+      }
+
+      const buttons =
+    document.querySelectorAll('button');
+
+      for (const buttom of buttons) {
+        button.addEventListener('click', createParagraph);
+      }
+    });
+
+  </script>
   <body>
     <button>Click me</button>
+    <button>new button</button>
   </body>
 </html>
