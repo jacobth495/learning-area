@@ -14,12 +14,14 @@
 <body>
 
   <input class="numberInput" type="text">
-  <p></p>
+  <p id="temp"></p>
 
   <script>
-    const input = document.querySelector('.numberInput');
-    const para = document.querySelector('p');
+    let tripleNum = (num) => num * 3;
+    let doubleNum = (num) => num * 2;
 
+    console.log(tripleNum(9))
+    console.log(doubleNum(14))
   </script>
 </body>
 </html>
